@@ -7,17 +7,43 @@
 </head>
 <style>
     body{background-color: black;padding-top: 20px;}
-    .navbar{
-        background-color: white;
- border-radius: 50px;
-        width: 900px;
-        height: 60px;
-        justify-self: center;
+     .navbar{
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 30px;
+        border: none;}
+        .navdiv{
+display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+}
+     .navdiv ul li a{
+        text-decoration: none;
+        color: blue;
         justify-content: center;
-        align-items: center;
+    } 
+    .list{
         display: flex;
-        padding: 10px;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+        margin-right: 10px;
     }
+    .list :hover{
+        text-decoration: underline;
+        color: lightskyblue;
+    }
+     .navdiv ul li{
+        display: flex;
+    }
+    .button{
+        background-color: #0551EC;
+        border-radius: 30px;color: #ffffff;
+        width: 155px;
+        height: 35px;
+        border: none;cursor: pointer;
+    }
+    .button :hover{background-color: #BFC6FF;}
     .blue{
         color: white;
         background-color: #0551ec;
@@ -71,18 +97,25 @@
     .icons{cursor: pointer;}
     p{font-weight: normal;}
      @media(max-width:940px) {
-        .navbar{
-            width: 100%;justify-content: space-evenly;
-        }
+       .navbar{
+        background-color: white;
+ border-radius: 50px;
+        height: 60px;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 10px;width: 100%;}
         .navdiv{display: flex;gap: 13rem;}
         .folhamm{
         display: none;
         }
         .onee{
-            width: 100px;
+            width: 120px;
         }
+        .list{display: none;}
         .menuu{
-        width: 40px;
+        width: 30px;
         }
         .blue{width: 100%;
         display: grid;
@@ -110,14 +143,24 @@ align-self: center;
 
     @media(min-width:940px) {
         .onee{display: none;}
+        .menuu{display: none;}
     }
+    .aa{align-self: center;}
 </style>
 <body>
    <nav class="navbar">
     <div class="navdiv">
          <a href="./index.html"><img class="onee" style="" src="./folham-logo.png.svg" alt=""></a>
-<a class="aa" href="./index.html"><img class="folhamm" style="margin-right: 600px;" src="./folham-logo.png.svg" alt="" ></a>
+<a class="aa" href="./index.html"><img class="folhamm"src="./folham-logo.png.svg" alt="" ></a>
 <img class="menuu" style="" src="./menuicon.svg" alt="">
+<ul class="list">
+        <li><a href="#">Home</a></li>
+         <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+            <li><a href="#">Our Sites</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button class="button">CjTronics by folham</button>
+     </ul>
     </div>
    </nav> 
    <div class="blue">
